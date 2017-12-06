@@ -1,8 +1,8 @@
 releases:
   - name: elasticache-broker
-    version: 0.1.1
-    url: https://s3-eu-west-1.amazonaws.com/gds-paas-build-releases/elasticache-broker-0.1.1.tgz
-    sha1: 2b50edf5b5e08196bbefb60bd1c82e0467f260c5
+    version: 0.0.1512581033
+    url: https://s3-eu-west-1.amazonaws.com/gds-paas-build-releases/elasticache-broker-0.0.1512581033.tgz
+    sha1: ca5339301dd0ffb4478289f37cd692898bad463d
 
 jobs:
   - name: elasticache_broker
@@ -17,6 +17,7 @@ jobs:
       - name: cf
     properties:
       elasticache-broker:
+        log_level: DEBUG
         broker_name: "elasticache-broker"
         broker_username: "elasticache-broker"
         broker_password: (( grab secrets.elasticache_broker_admin_password ))
