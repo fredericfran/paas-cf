@@ -2716,6 +2716,7 @@ jobs:
                     tag: latest
                 params:
                   DISABLE_CF_ACCEPTANCE_TESTS: ((disable_cf_acceptance_tests))
+                  SKIP_REGEX: "exercises basic loggregator behavior"
                 inputs:
                   - name: paas-cf
                   - name: cf-acceptance-tests
