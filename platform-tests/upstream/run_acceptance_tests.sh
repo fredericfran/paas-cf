@@ -34,4 +34,5 @@ cd src/github.com/cloudfoundry/cf-acceptance-tests
   -skipPackage=helpers \
   -skip="${SKIP_REGEX}" \
   -slowSpecThreshold=${SLOW_SPEC_THRESHOLD} \
-  -nodes="${NODES}"
+  -nodes="${NODES}" \
+  -focus="applies\\sdefault\\senvironment\\svariables\\swhile\\srunning\\sapps\\sand\\stasks"
