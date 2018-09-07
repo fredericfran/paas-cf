@@ -346,7 +346,10 @@ resources:
     type: git
     source:
       uri: https://github.com/alphagov/paas-billing
-      tag_filter: v0.42.0
+      branch: add_tiny_elasticsearch_plans
+      # FIXME: remove branch and bump tag version once
+      # https://github.com/alphagov/paas-billing/pull/54 is merged etc.
+      #tag_filter: v0.42.0
 
   - name: paas-accounts
     type: git
