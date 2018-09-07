@@ -5,4 +5,8 @@ bin/terraform*
 platform-tests/pkg
 platform-tests/src/results
 terraform/.terraform/
+node_modules/
+package-lock.json
 org_usage.csv
+abandoned_orgs.json
+old_orgs.json
